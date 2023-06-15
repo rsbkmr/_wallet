@@ -1,0 +1,3 @@
+# Wallet
+
+A Bitcoin Wallet.

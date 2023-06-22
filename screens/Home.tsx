@@ -1,4 +1,4 @@
-import {View, Text, Pressable} from 'react-native';
+import {View, Text, Pressable, ScrollView} from 'react-native';
 import React from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/FontAwesome5';
@@ -25,12 +25,34 @@ export default function Home() {
           </Text>
         </Pressable>
       </View>
-      {/* Balance */}
-      <View className="items-center justify-center flex-1">
-        <Text className="text-4xl font-extrabold text-black dark:text-white">
-          1000 sats
-        </Text>
-      </View>
+      {/* Cards */}
+      <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+        <View className="flex-1 flex-row gap-x-4">
+          <View className="mt-4 h-52 w-80 p-6 bg-blue-200 dark:bg-blue-900 rounded border border-blue-700 shadow-2xl">
+            <Text className="text-5xl font-bold text-blue-600 dark:text-blue-300">
+              1000 sats
+            </Text>
+            <View className="mt-auto flex-row justify-between items-end">
+              <Text className="text-2xl text-blue-600 dark:text-blue-300 font-medium">
+                Rishabh Kumar
+              </Text>
+              <Text className="text-blue-600 dark:text-blue-300">
+                <Icon name="bitcoin" size={50} />
+              </Text>
+            </View>
+          </View>
+          <Pressable className="mt-4 h-52 w-80 p-6 bg-blue-200 dark:bg-blue-900 rounded border border-blue-700 shadow-2xl active:opacity-50">
+            <View className="flex-1 justify-center items-center">
+              <Text className="text-blue-600 dark:text-blue-300">
+                <Icon name="plus" size={50} />
+              </Text>
+              <Text className="text-blue-600 dark:text-blue-300 font-bold text-2xl mt-2">
+                Add Wallet
+              </Text>
+            </View>
+          </Pressable>
+        </View>
+      </ScrollView>
       {/* Receive and Send Button */}
       <View className="flex-row gap-3">
         <Pressable

@@ -28,7 +28,7 @@ export default function Home() {
       {/* Cards */}
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
         <View className="flex-1 flex-row gap-x-4">
-          <View className="mt-4 h-52 w-80 p-6 bg-blue-200 dark:bg-blue-900 rounded border border-blue-700 shadow-2xl">
+          <View className="mt-4 h-52 w-80 p-6 bg-blue-200 dark:bg-blue-900 rounded border border-blue-700">
             <Text className="text-5xl font-bold text-blue-600 dark:text-blue-300">
               1000 sats
             </Text>
@@ -41,7 +41,7 @@ export default function Home() {
               </Text>
             </View>
           </View>
-          <Pressable className="mt-4 h-52 w-80 p-6 bg-blue-200 dark:bg-blue-900 rounded border border-blue-700 shadow-2xl active:opacity-50">
+          <Pressable className="mt-4 h-52 w-80 p-6 bg-blue-200 dark:bg-blue-900 rounded border border-blue-700 active:opacity-50">
             <View className="flex-1 justify-center items-center">
               <Text className="text-blue-600 dark:text-blue-300">
                 <Icon name="plus" size={50} />

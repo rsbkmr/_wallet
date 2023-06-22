@@ -3,6 +3,7 @@ import React, {useRef, useState} from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {useNavigation} from '@react-navigation/native';
 import {RootNavigationProp} from '../navigation/RootStackNavigation';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 export default function RestoreWallet() {
   const navigation = useNavigation<RootNavigationProp>();
@@ -65,10 +66,13 @@ export default function RestoreWallet() {
       <View className="mt-auto">
         <Pressable
           className="p-4 bg-blue-700 border-2 border-blue-700 rounded active:opacity-50"
-          onPress={() => navigation.navigate('Home')}>
-          <Text className="text-base font-bold text-center text-white">
-            Restore Wallet
-          </Text>
+          onPress={() => navigation.navigate('AddWalletName')}>
+          <View className="flex-row items-center justify-center gap-x-2">
+            <Text className="text-base font-bold text-center text-white">
+              Next
+            </Text>
+            <Icon name="long-arrow-alt-right" color={'white'} size={20} />
+          </View>
         </Pressable>
       </View>
     </SafeAreaView>

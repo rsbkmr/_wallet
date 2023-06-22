@@ -46,10 +46,13 @@ export default function CreateWallet() {
       <View className="mt-auto">
         <Pressable
           className="p-4 bg-blue-700 border-2 border-blue-700 rounded active:opacity-50"
-          onPress={() => navigation.navigate('Home')}>
-          <Text className="text-base font-bold text-center text-white">
-            Create Wallet
-          </Text>
+          onPress={() => navigation.navigate('AddWalletName')}>
+          <View className="flex-row items-center justify-center gap-x-2">
+            <Text className="text-base font-bold text-center text-white">
+              Next
+            </Text>
+            <Icon name="long-arrow-alt-right" color={'white'} size={20} />
+          </View>
         </Pressable>
       </View>
     </SafeAreaView>

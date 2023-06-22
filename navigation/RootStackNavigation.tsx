@@ -7,6 +7,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Start from '../screens/Start';
 import CreateWallet from '../screens/CreateWallet';
 import RestoreWallet from '../screens/RestoreWallet';
+import AddWalletName from '../screens/AddWalletName';
 import Home from '../screens/Home';
 import Receive from '../screens/Receive';
 import Scan from '../screens/Scan';
@@ -15,6 +16,7 @@ export type RootNavigationList = {
   Start: undefined;
   CreateWallet: undefined;
   RestoreWallet: undefined;
+  AddWalletName: undefined;
   Home: undefined;
   Receive: undefined;
   Scan: undefined;
@@ -31,6 +33,7 @@ export default function RootStackNavigation() {
         <Root.Screen name="Start" component={Start} />
         <Root.Screen name="CreateWallet" component={CreateWallet} />
         <Root.Screen name="RestoreWallet" component={RestoreWallet} />
+        <Root.Screen name="AddWalletName" component={AddWalletName} />
         <Root.Screen name="Home" component={Home} />
         <Root.Screen name="Receive" component={Receive} />
         <Root.Screen name="Scan" component={Scan} />

@@ -12,9 +12,7 @@ export default function Home() {
     <SafeAreaView className="flex-1 p-4 bg-white dark:bg-slate-900">
       {/* Top Buttons */}
       <View className="flex-row justify-between">
-        <Pressable
-          className="active:opacity-50"
-          onPress={() => navigation.navigate('Transactions')}>
+        <Pressable className="active:opacity-50">
           <Text className="text-black dark:text-white">
             <Icon name="history" size={25} />
           </Text>

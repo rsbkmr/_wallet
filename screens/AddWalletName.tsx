@@ -1,7 +1,6 @@
 import {View, Text, Pressable, TextInput} from 'react-native';
 import React from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import Icon from 'react-native-vector-icons/FontAwesome5';
 import {useNavigation} from '@react-navigation/native';
 import {RootNavigationProp} from '../navigation/RootStackNavigation';
 
@@ -12,13 +11,14 @@ export default function AddWalletName() {
     <SafeAreaView className="flex-1 p-4 bg-white dark:bg-slate-900">
       {/* Text Input */}
       <View className="justify-center flex-1">
-        <Text className="text-xl font-bold mb-2">
+        <Text className="text-xl text-black dark:text-white font-bold mb-2">
           Enter your wallet's name.
         </Text>
         <TextInput
           placeholder="e.g. Rishabh's Wallet"
+          placeholderTextColor={'grey'}
           autoCorrect={false}
-          className="border w-full p-4 rounded border-blue-700"
+          className="border w-full p-4 rounded bg-white text-black border-blue-700"
         />
       </View>
       {/* Buttons */}

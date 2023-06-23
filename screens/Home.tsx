@@ -26,7 +26,11 @@ export default function Home() {
         </Pressable>
       </View>
       {/* Cards */}
-      <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        snapToInterval={320 + 3}
+        snapToAlignment={'center'}>
         <View className="flex-1 flex-row gap-x-4">
           <View className="mt-4 h-52 w-80 p-6 bg-blue-200 dark:bg-blue-900 rounded border border-blue-700">
             <Text className="text-5xl font-bold text-blue-600 dark:text-blue-300">
